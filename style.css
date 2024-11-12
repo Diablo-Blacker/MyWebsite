@@ -72,7 +72,7 @@ input[type="submit"]:hover {
 /* Style for the message that appears after submission */
 #message {
     font-size: 3em;
-    color: #000000;
+    color: #ff05e6;
     margin-top: 20px;
     opacity: 0;
     animation: fadeIn 1s forwards;
