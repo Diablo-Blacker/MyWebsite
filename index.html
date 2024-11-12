@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Website with Love Form</title>
+    <title>StitchLoveForm</title>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS -->
 </head>
 <body>
+
     <header>
-        <h1>Welcome! To Stitch LoveForm!</h1>
+        <h1>Welcome to My Stitch Love Form!</h1>
     </header>
 
     <!-- Love Form Section -->
@@ -25,8 +26,18 @@
         document.getElementById('loveForm').addEventListener('submit', function(event) {
             event.preventDefault(); // Prevent the form from submitting
             const name = document.getElementById('name').value;
-            const message = `I love you, ${name}!`;
-            document.getElementById('message').textContent = message;
+
+            // Set the background image and text for the message div
+            const messageContainer = document.getElementById('message');
+            messageContainer.style.backgroundImage = 'url(https://i.pinimg.com/564x/a8/b8/0c/a8b80c03b8ebc21ccb18198ec2b42573.jpg)'; // Change to your desired image URL
+            messageContainer.style.backgroundSize = 'cover'; // Ensure image covers the area
+            messageContainer.style.backgroundPosition = 'center';
+            messageContainer.style.width = '100%';
+            messageContainer.style.height = '200px'; // Set height as needed
+
+            // Add the text on top of the image
+            const text = `I love you, 💖${name}!💖`;
+            messageContainer.innerHTML = `<span class="overlay-text">${text}</span>`;
         });
     </script>
 
