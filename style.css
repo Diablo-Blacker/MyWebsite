@@ -1,32 +1,28 @@
-/* Center everything inside the body */
 body {
     font-family: 'Dancing Script', cursive;
     background-color: #ffe4e1; 
-    background-image: url('https://www.hdwallpapers.in/download/white_clouds_blue_sky_building_aetna_anime_background_hd_anime_background-1920x1080.jpg');
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/668/982/447/anime-moon-sky-clouds-wallpaper-preview.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    color: #8839b8;
+    color: #8839b8; /* Set default text color */
     margin: 0;
     padding: 0;
-    
-    /* Flexbox styles to center content */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full height of the viewport */
+    height: 100vh;
 }
 
-/* Style for the header */
 header {
     text-align: center;
     margin-top: 50px;
 }
 
 h1 {
-    font-size: 3em;
-    color: #8839b8;
+    font-size: 2.5em;
+    color: #ff77a9;
 }
 
 /* Style for the form itself */
@@ -40,7 +36,6 @@ h1 {
     text-align: center;
 }
 
-/* Style for the text input field */
 input[type="text"] {
     padding: 12px;
     margin-bottom: 15px;
@@ -51,7 +46,6 @@ input[type="text"] {
     transition: all 0.3s ease;
 }
 
-/* Style for the submit button */
 input[type="submit"] {
     padding: 12px;
     background-color: #ff77a9;
@@ -63,7 +57,6 @@ input[type="submit"] {
     transition: all 0.3s ease;
 }
 
-/* Hover effect for the submit button */
 input[type="submit"]:hover {
     background-color: #ff4d7f;
     transform: scale(1.1);
@@ -71,15 +64,21 @@ input[type="submit"]:hover {
 
 /* Style for the message that appears after submission */
 #message {
-    font-size: 2.5em;
-    color: #c504cc;
-    margin-top: 20px;
-    opacity: 0;
-    animation: fadeIn 1s forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
+.overlay-text {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the text in the middle */
+    font-size: 24px;
+    color: #8839b8;
 }
