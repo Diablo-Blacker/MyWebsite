@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Website with Love Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website!</h1>
+    </header>
+
+    <!-- Love Form Section -->
+    <section>
+        <form id="loveForm">
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <input type="submit" value="Send Love">
+        </form>
+        <div id="message"></div>
+    </section>
+
+    <script>
+        document.getElementById('loveForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting
+            const name = document.getElementById('name').value;
+            const message = `I love you, ${name}!`;
+            document.getElementById('message').textContent = message;
+        });
+    </script>
+</body>
+</html>

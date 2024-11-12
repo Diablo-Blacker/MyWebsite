@@ -1,0 +1,44 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+}
+
+#loveForm {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+#name {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#message {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #4CAF50;
+}
