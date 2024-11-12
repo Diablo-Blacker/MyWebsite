@@ -1,7 +1,7 @@
 body {
     font-family: 'Dancing Script', cursive;
-    background-color: #ffe4e1; 
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0X9NwDJGODINMsKJ_4zxdQK4F03-0U8DgzQ&s');
+    background-color: #8839b8; 
+    background-image: url('https://images6.alphacoders.com/118/1184847.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@ header {
 
 h1 {
     font-size: 2.5em;
-    color: #ff77a9;
+    color: #8839b8;
 }
 
 /* Style for the form itself */
@@ -30,7 +30,7 @@ h1 {
     margin: 50px auto;
     padding: 30px;
     max-width: 350px;
-    background-color: #fff1f3;
+    background-color: #8839b8;
     border-radius: 20px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
